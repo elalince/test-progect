@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{
+    "title":"Test Krouli E.I."
+    })
+<body>
+    @@include('html/header.html',{})
+    <main>
+        <section class="infoSection">
+            <div class="infoBlock main-width">
+                <div class="infoBlock__text">
+                    <div class="infoBlock__title">
+                        How <span>Over 410,000 Americans</span> Increased Their Property Value <span>In Under 6 Hours*</span> With This Simple Upgrade.
+                    </div>
+                    <div class="infoBlock__subtitle">
+                        Ideal for detached and semi-detached homes with sloped roofs.
+                    </div>
+                </div>
+                <div class="infoBlock__image">
+                    <a href="https://google.com" target="_blank" class="infoBlock__badge">
+                        <svg>
+                            <use xlink:href="#svgBadge"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="infographicSection">
+            <div class="infographicBlock main-width">
+                <div class="infographicBlock__item">
+                    <svg>
+                        <use xlink:href="#svgIcon1"></use>
+                    </svg>
+                    Lifetime warranty with 100% <br/>no-clog guarantee
+                </div>
+                <div class="infographicBlock__item">
+                    <svg>
+                        <use xlink:href="#svgIcon2"></use>
+                    </svg>
+                    Fits most homes
+                </div>
+                <div class="infographicBlock__item">
+                    <svg>
+                        <use xlink:href="#svgIcon3"></use>
+                    </svg>
+                    Installs over existing gutters <br/>saving you thousands
+                </div>
+                <div class="infographicBlock__item">
+                    <svg>
+                        <use xlink:href="#svgIcon4"></use>
+                    </svg>
+                    <svg class="svgRating">
+                        <use xlink:href="#svgIconRating"></use>
+                    </svg>
+                    Сustomer rating
+                </div>
+            </div>
+        </section>
+        <section class="formSection">
+            <div class="formBlock main-width">
+                <div class="formBlock__inscription">
+                    <svg>
+                        <use xlink:href="#svgIconPig"></use>
+                    </svg>
+                    You will be surprised how affordable gutter guards are!
+                </div>
+                <div class="formBlock__title">
+                    See How Much Gutter Guards Cost In The XX, XXX Area
+                </div>
+                <div class="formBlock__mainForm">
+                    <div class="mainForm">
+                        <div class="mainForm__title">
+                            What is your ZIP Code?
+                        </div>
+                        <form name="codeForm">
+                            <input type="number" class="mainForm__input" placeholder="Enter ZIP Code" />
+                            <div class="mainForm__subtitle">Free, no-obligation estimates.
+                            </div>
+                            <a class="mainForm__btn">
+                                Get estimate
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modalSection">
+            <a class="modalSection__closeLink">
+                <svg>
+                    <use xlink:href="#svgClose"></use>
+                </svg>
+            </a>
+            <div class="progressBar">
+                <div class="progressResult"></div>
+            </div>
+            <div class="modalSection__formContainer">
+                <div class="mainForm mainForm_first">
+                    <div class="mainForm__title mainForm__title_bold">
+                        Are you homeowner or authrized to make property changes?
+                    </div>
+                    <form name="codeChoice">
+                        <div class="mainForm__radioInputs">
+                            <div class="mainForm__radio">
+                                <input type="radio" name="radio" value="Yes" id="yes" class="mainForm__radio" />
+                                <label for="yes">
+                                    <svg>
+                                        <use xlink:href="#svgYes"></use>
+                                    </svg>
+                                    <span class="mainForm__radioLabel">Yes</span>
+                                </label>
+                            </div>
+                            <div class="mainForm__radio">
+                                <input type="radio" name="radio" value="No" id="no" />
+                                <label for="no">
+                                    <svg>
+                                        <use xlink:href="#svgNo"></use>
+                                    </svg>
+                                    <span class="mainForm__radioLabel">No</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <a class="mainForm__btn mainForm__btn_short mainForm__btn_next">
+                            Next
+                        </a>
+                    </form>
+                </div>
+                <div class="mainForm mainForm_second mainForm_hidden">
+                    <div class="mainForm__title mainForm__title_bold">
+                        Who should I prepare this estimate for?
+                    </div>
+                    <div class="mainForm__previousChoice">
+                        Your choice: <b class="mainForm__choiceValue" ></b>
+                    </div>
+                    <form name="codeFinal">
+                        <div class="mainForm__fields">
+                            <input type="text" class="mainForm__input mainForm__input_short" placeholder="Full name" />
+                            <input type="email" class="mainForm__input mainForm__input_short" placeholder="Email address" />
+                        </div>
+                        <a class="mainForm__btn mainForm__btn_short mainForm__btn_completed">
+                            Next
+                        </a>
+                    </form>
+                    <div class="mainForm__security">
+                        <svg>
+                            <use xlink:href="#svgLock"></use>
+                        </svg>
+                        Safe, Secure and Confidential</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+</body>
+</html>
